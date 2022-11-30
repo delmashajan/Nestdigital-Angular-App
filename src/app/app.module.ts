@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { FormsModule } from '@angular/forms';
 import { ViewFriendComponent } from './view-friend/view-friend.component';
+import { ViewCourseComponent } from './view-course/view-course.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ViewFriendComponent } from './view-friend/view-friend.component';
     AboutUsComponent,
     ContactComponent,
     AdminLoginComponent,
-    ViewFriendComponent
+    ViewFriendComponent,
+    ViewCourseComponent
   ],
   imports: [
     BrowserModule,
