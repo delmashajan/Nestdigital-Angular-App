@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 import { AddCourseComponent } from './add-course/add-course.component';
 import { AddFriendComponent } from './add-friend/add-friend.component';
+import { EmployeeRegisterComponent } from './employee-register/employee-register.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AddFriendComponent } from './add-friend/add-friend.component';
     ViewCourseComponent,
     EmployeeLoginComponent,
     AddCourseComponent,
-    AddFriendComponent
+    AddFriendComponent,
+    EmployeeRegisterComponent
   ],
   imports: [
     BrowserModule,
