@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { ViewFriendComponent } from './view-friend/view-friend.component';
 import { ViewCourseComponent } from './view-course/view-course.component';
 import { HttpClientModule } from '@angular/common/http';
+import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     ContactComponent,
     AdminLoginComponent,
     ViewFriendComponent,
-    ViewCourseComponent
+    ViewCourseComponent,
+    EmployeeLoginComponent
   ],
   imports: [
     BrowserModule,
