@@ -13,6 +13,7 @@ import { ViewFriendComponent } from './view-friend/view-friend.component';
 import { ViewCourseComponent } from './view-course/view-course.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
+import { AddCourseComponent } from './add-course/add-course.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { EmployeeLoginComponent } from './employee-login/employee-login.componen
     AdminLoginComponent,
     ViewFriendComponent,
     ViewCourseComponent,
-    EmployeeLoginComponent
+    EmployeeLoginComponent,
+    AddCourseComponent
   ],
   imports: [
     BrowserModule,
