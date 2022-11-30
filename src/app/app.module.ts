@@ -16,6 +16,59 @@ import { EmployeeLoginComponent } from './employee-login/employee-login.componen
 import { AddCourseComponent } from './add-course/add-course.component';
 import { AddFriendComponent } from './add-friend/add-friend.component';
 import { EmployeeRegisterComponent } from './employee-register/employee-register.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { RouterModule, Routes } from '@angular/router';
+import { ViewNavbarComponent } from './view-navbar/view-navbar.component';
+import { AddNavbarComponent } from './add-navbar/add-navbar.component';
+
+
+const myRoute:Routes=[
+  {
+    path:"",
+    component:HomeComponent
+  },
+  {
+    path:"gallery",
+    component:GalleryComponent
+  },
+  {
+    path:"about",
+    component:AboutUsComponent
+  },
+  {
+    path:"contact",
+    component:ContactComponent
+  },
+  {
+    path:"adminlogin",
+    component:AdminLoginComponent
+  },
+  {
+    path:"emplogin",
+    component:EmployeeLoginComponent
+  },
+  {
+    path:"viewfriend",
+    component:ViewFriendComponent
+
+  },
+  {
+    path:"viewcourses",
+    component:ViewCourseComponent
+  },
+  {
+    path:"addfriend",
+    component:AddFriendComponent
+  },
+  {
+    path:"addcourse",
+    component:AddCourseComponent
+  },
+  {
+    path:"register",
+    component:EmployeeRegisterComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -30,13 +83,17 @@ import { EmployeeRegisterComponent } from './employee-register/employee-register
     EmployeeLoginComponent,
     AddCourseComponent,
     AddFriendComponent,
-    EmployeeRegisterComponent
+    EmployeeRegisterComponent,
+    NavbarComponent,
+    ViewNavbarComponent,
+    AddNavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
