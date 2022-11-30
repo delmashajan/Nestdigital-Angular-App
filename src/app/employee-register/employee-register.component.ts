@@ -36,17 +36,17 @@ export class EmployeeRegisterComponent {
 
 
 
-
-    if (this.password==this.cpassword) 
-    {
-      alert("registered successfully")
-      console.log(data)
-      
-    } else {
-
-      alert("something went wrong")
-      
+    if (data.password == null && data.cpassword == null){
+      alert("Enter the fields")
     }
+    else if (this.password == this.cpassword){
+      console.log(data)
+      alert("Registered successfully")
+    }
+    else{
+      alert("something went wrong")
+    }
+
 
 
     
