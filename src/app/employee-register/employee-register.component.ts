@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-employee-register',
@@ -27,6 +28,8 @@ export class EmployeeRegisterComponent {
   password=""
   cpassword=""
 
+  constructor(private route:Router){}
+
   readValues=()=>{
 
 
@@ -36,13 +39,11 @@ export class EmployeeRegisterComponent {
 
 
 
-    if (data.password == null && data.cpassword == null){
-      alert("Enter the fields")
-    }
-    else if (this.password == this.cpassword){
-      console.log(data)
+    if (this.password == this.cpassword){
       alert("Registered successfully")
+      this.route.navigate(['/emplogin'])
     }
+    
     else{
       alert("something went wrong")
     }
