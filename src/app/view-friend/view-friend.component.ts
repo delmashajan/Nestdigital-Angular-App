@@ -11,6 +11,8 @@ export class ViewFriendComponent {
   constructor(private api:ApiService){
     api.fetchFriend().subscribe(
       (response)=>{
+
+        this.loading=false
         this.friend=response
       }
     )
@@ -19,5 +21,7 @@ export class ViewFriendComponent {
 
 
   friend:any=[]
+
+  loading:boolean=true
 
 }
