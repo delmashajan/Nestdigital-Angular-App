@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
+
+  name=""
+  email=""
+  phone=""
+  company=""
+
+  readValue=()=>{
+    let data:any={"name":this.name,"email":this.email,"phone":this.phone,"company":this.company
+
+    }
+    console.log(data)
+  }
+
 }
